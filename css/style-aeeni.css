@@ -1,0 +1,275 @@
+*,::before,::after{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	transition: all 0.8s ease-in-out;
+}
+
+body{
+	width: 100%;
+	background: white;
+}
+
+/*****************HEADER*****************/
+
+/************************BODY*****************************/
+
+main section{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 30px 140px;
+}
+
+section .para , section .cadre{
+	width: 50%;
+	padding: 30px;
+	margin: auto 0;
+}
+
+.para{
+	background: #b0b0b01c;
+	border-radius: 0 20px 0 20px;
+}
+
+.cadre{
+	text-align: center;
+}
+
+.AEENI img{
+	width: 80%;
+}
+
+.apropos img{
+	width: 50%;
+}
+
+.objectifs img{
+	width: 704;
+}
+
+/*-----------------THEAD-----------------*/
+.sumMembre{
+	width: 50%;
+	background: rgba(93, 25, 36, 1);
+	color: #F9C794;
+	text-align: center;
+	padding: 50px 20px;
+	margin: 20px 0;
+	font-family: 'Century Gothic';
+	cursor: pointer;
+	clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+}
+
+table{
+	margin: 50px 0;
+	width: 100%;
+	padding: 20px;
+	border-collapse: collapse;
+	
+}
+.nom h4{
+	color: #F9C794;
+}
+
+
+.tabMembre{
+	width: 100%;
+	/* overflow:auto; */
+}
+
+.tabMembre td{
+	opacity: 0.9;
+	transition: all 0.2s ease-in-out;
+
+}
+.tabMembre tr:hover{
+	opacity: 1;
+	background: rgba(93, 25, 36, 1);
+	color: white;
+}
+
+
+table p{
+	margin: 5px;
+	font-size: 13px;
+}
+td{
+	padding: 20px 15px;
+}
+
+table .nom{
+	border-left: 1px solid #592C31;
+	text-align: left;
+	padding-left: 15px;
+	margin: 10px 0;
+}
+
+table .nom p {
+	font-size: 15px;
+}
+
+.membre{
+	margin: auto;
+}
+
+.nom{
+	margin: auto 20px;
+}
+
+.rosa_pic{
+	background: url(/img/RALINIRINA_Rosa_Elysabeth.jpg);
+	width: 200px;
+	height: 200px;
+}
+
+.v_p1_pic{
+	background: url(/img/RAJAONARISINA.jpg);
+}
+.v_p2_pic{
+	background: url(/img/TOTO.jpg);
+}
+
+.rosa_pic,.v_p1_pic,.v_p2_pic{
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	background-size: cover;
+	background-position: center;
+	margin: 0 auto;
+}
+
+/*-------------------TBODY-----------------*/
+
+
+.evenementiel{
+	background: url(/img/RAMIARINJAONA.jpg);
+}
+
+.logistique{
+	background: url(/img/ANDRIAFETIARISON.jpg);
+}
+
+.relation_partenaire{
+	background: url(/img/RENÉE.jpg);
+}
+
+.evenementiel,.logistique,.relation_partenaire{
+	border-radius: 50%;
+	width: 80px;
+	height: 80px;
+	background-size: cover;
+	background-position: center;
+	background-position: top;
+	margin: 0 auto;
+}
+
+
+h3{
+	font-weight: bolder;
+	font-family: 'Century Gothic';
+	padding: 3px 5px ;
+	display: inline-block;
+	color: #592C31;
+	font-size: 25px;
+}
+h4{
+	font-family: 'Century Gothic';
+	font-weight: bolder;
+	color: #F9C794;
+}
+
+th{
+	font-family: 'Century Gothic';
+	font-weight: normal;
+	color: #F9C794;
+}
+
+p ,a,td{
+	margin: 30px 0;
+	font-family: 'Century Gothic';
+}
+
+@media screen and (max-width: 1100px){
+	body section{
+		padding: 30px 100px;
+	}
+	.apropos img{
+		width: 70%;
+	}
+}
+@media screen and (max-width: 1000px){
+	body section{
+		padding: 30px 70px;
+	}
+}
+@media screen and (max-width: 900px){
+	body section{
+		padding: 30px 50px;
+	}
+	.apropos img{
+		width: 80%;
+	}
+}
+@media screen and (max-width: 760px){
+	body section{
+		padding: 30px 10px;
+	}
+}
+@media screen and (max-width: 760px){
+	body section{
+		flex-direction: column-reverse;
+	}
+	section .para , section .cadre{
+		width: 80%;
+		padding: 30px;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 590px){
+	.tabMembre {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 500px){
+	.tabMembre {
+		width: 100%;
+		overflow: auto;
+	}
+}
+
+
+@media screen and (max-width: 440px){
+	body section{
+		padding: 20px 0;
+	}
+	section .para , section .cadre{
+		width: 80%;
+		padding: 10px;
+	}
+}
+@media screen and (max-width: 370px){
+	section .para , section .cadre{
+		width: 80%;
+		padding: 0;
+	}
+}
+
+/*****************FOOTER*****************/
+
+/*----animation-----*/
+
+.AEENI .cadre { 
+	animation: rotation 3s linear infinite alternate;
+}
+
+@keyframes rotation{
+	from{
+		transform: scaleX(0);
+	}
+	to{
+		transform: scaleX(1);
+	}
+}

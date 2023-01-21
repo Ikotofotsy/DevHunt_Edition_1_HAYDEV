@@ -1,0 +1,232 @@
+*,::before,::after{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	transition: all 0.8s ease-in-out;
+}
+
+body{
+	width: 100%;
+	background: #fff;
+}
+
+@font-face {
+	font-family: 'BroshK';
+	src: url('font/Brosh.ttf');
+}
+
+/*****************HEADER*****************/
+
+/***********************MAIN**********************/
+/*---------------------haut-----------------------*/
+
+.haut{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 90%;
+	margin: 0 auto;
+	z-index: 1;
+}
+
+.titre{
+	margin: 0;
+}
+
+.titre img{
+	width: 100%;
+}
+
+
+.titre a{
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	width:40%;
+    background: #971E1E; 
+    border: 1px solid #971E1E;
+    border-radius: 10px;
+    color: white;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px 5px;
+}
+
+@media screen and (max-width: 1000px){
+	.titre a{
+		width: 60%;
+	}
+}
+@media screen and (max-width: 660px){
+	.haut{
+		flex-direction: column;
+	}
+}
+
+/*logo et image*/
+
+.titre,.logo{
+	width: 35%;
+}
+
+.cadre_logo{
+	width: 100%;
+	margin: auto 0;
+}
+
+.cadre_logo img{
+	position: relative;
+	width: 100%;
+	z-index: 15;
+
+}
+
+@media screen and (max-width: 1000px){
+	.titre,.logo{
+		width: 40%;
+	}
+}
+@media screen and (max-width: 660px){
+	.titre,.logo{
+		width: 80%;
+		margin: 50px auto;
+	}
+}
+/*description et contact*/
+.description p{
+	margin: 20px 10px;
+	font-family: 'Century Gothic';
+}
+
+/*------------------------bas----------------------------*/
+.bas{
+	padding: 70px 0;
+	background: #b0b0b01c;
+}
+h4{
+	margin: 50px auto;
+	text-align: center;
+	font-family: 'Century Gothic';
+}
+.slide{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.slideDroite,.slideGauche{
+	width: 50%;
+}
+/*partenaire*/
+
+.photo1{
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 50px auto;
+	cursor: pointer;
+}
+
+.logoPartenaire1{
+	background: url(./img/KalybotLogo.png);
+	transition: all 0.3s ease-out;
+}
+.logoPartenaire2{
+	background: url(./img/LogoMain.png);
+	transition: all 0.3s ease-out;
+}
+.logoPartenaire3{
+	background: url(./img/logo-arato.jpg);
+	transition:all 0.3s ease-out;
+}
+.logoPartenaire4{
+	background: url(./img/MahefaNumeric-Logo.png);
+	transition: all 0.3s ease-out;
+}
+.logoPartenaire5{
+	background: url(./img/NGA.png);
+	transition: all 0.3s ease-out;
+}
+.logoPartenaire6{
+	background: url(./img/ngi_logo.png);
+	transition: all 0.3s ease-out;
+}
+
+.logoPartenaire7{
+	background: url(./img/akata_logo.png);
+	transition: all 0.3s ease-out;
+}
+
+.logoPartenaire1:hover {
+	transform: scale(1.2);
+}
+.logoPartenaire2:hover {
+	transform: scale(1.2);
+}
+.logoPartenaire3:hover {
+	transform: scale(1.2);
+}
+.logoPartenaire4:hover {
+	transform: scale(1.2);
+}
+.logoPartenaire5:hover {
+	transform: scale(1.2);
+}
+.logoPartenaire6:hover {
+	transform: scale(1.2);
+}
+.logoPartenaire7:hover {
+	transform: scale(1.2);
+}
+.photo1 div{
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	background-position: center;
+	background-size: cover;
+}
+/*club*/
+
+
+.photo2{
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 50px auto;
+}
+.logoCub1{
+	background: url(./img/logo-c2e.jpg);
+}
+.logoCub2{
+	background: url(./img/logo-c3lf.jpg);
+}
+.logoCub3{
+	background: url(./img/logo-cybersec.png);
+}
+.logoCub4{
+	background: url(./img/logo-multi.jpg);
+}
+
+.photo2 div{
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	background-position: center;
+	background-size: cover;
+}
+
+@media screen and (max-width: 660px){
+	.slide{
+		flex-direction: column;
+		width: 80%;
+		margin: 0 auto;
+	}
+	.slideDroite,.slideGauche{
+		width: 80%;
+		margin: 0 auto;
+	}
+	.photo1,.photo2{
+		width: 100%;
+	}
+}
